@@ -11,18 +11,18 @@
   <ion-list>
 
     <ion-item>
-      <ion-label stacked>Username</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="email" [(ngModel)]="credentials.email"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label stacked>Password</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input type="password" [(ngModel)]="credentials.password"></ion-input>
     </ion-item>
   
   </ion-list>
   
     <div padding>
-      <button ion-button large round color="primary" block>Sign In</button>
+      <button ion-button large round color="primary" block (click)="login()">Login</button>
     </div>
 </ion-content>
